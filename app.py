@@ -20,7 +20,7 @@ else:
 
 col1,col2 = st.columns(2)
 col1.metric("Total Employees: ", len(filtered_df))
-col2.metric("Average Salary: f"Rs{filtered_df["salary"].mean():,.0f}")
+col2.metric("Average Salary", f"Rs{filtered_df["salary"].mean():,.0f}")
 
 
 st.subheader("Employee Detail)
